@@ -1,0 +1,134 @@
+.recipe {
+  margin-top: .44rem;
+  font-family: PingFang SC, Helvetica, 黑体;
+  background-color: #F3F3F3;
+
+  .recipe-header {
+    font-size: .16rem;
+    height: .47rem;
+    line-height: .45rem;
+    background: #FFFDD7;
+    text-align: center;
+    border-top: .01rem solid #E3E3E3;
+    border-bottom: .01rem solid #E3E3E3
+  }
+  .recipe-body {
+    margin-top: .08rem;
+    background-color: #FFF;
+    padding: .1rem 0 0 0;
+    p {
+      height: .32rem;
+      line-height: .33rem;
+      font-size: .14rem;
+      //border-bottom: .01rem solid #E3E3E3;
+      color: #969696;
+      margin: 0 0 0 .24rem;
+    }
+  }
+  .recipe-list {
+    overflow: hidden;
+    padding: 0 0 0 .24rem;
+    margin-bottom: 0;
+    li {
+      height: .85rem;
+      padding: .12rem .16rem .12rem 0;
+      border-top: .01rem solid #E3E3E3;
+      list-style: none;
+      margin: 0;
+      a {
+        img {
+          width: .6rem;
+          height: .6rem;
+          float: left;
+          margin-right: .08rem;
+        }
+        .recipe-info {
+          display: inline-block;
+          width: 2.12rem;
+
+          .recipe-title {
+            font-size: .18rem;
+            color: #000;
+            display: block;
+            width: 2.12rem;
+            height: .21rem;
+            line-height: .21rem;
+          }
+          .recipe-msg {
+            display: block;
+            font-size: .14rem;
+            color: #969696;
+            height: .16rem;
+            line-height: .16rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          .recipe-date{
+            display: block;
+            height: .14rem;
+            line-height: .14rem;
+            font-size: .12rem;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+  .recipe-find{
+    width: 3.2rem;
+    height: .44rem;
+    background: white;
+    line-height: .14rem;
+    border-top: .01rem solid #E3E3E3;
+    a{
+      width: 3.2rem;
+      height: .44rem;
+      display: block;
+      color: #987A57;
+      .recipe-left{
+        float: left;
+        width: .13rem;
+        height: .13rem;
+        background-size: .13rem .13rem;
+        background-image: url(../images/search_icon.png);
+        margin: .15rem .08rem 0 .24rem;
+      }
+      .recipe-right{
+        float: right;
+        width: 7px;
+        height: 13px;
+        background-size: 7px 13px;
+        background-image: url(../images/right_icon.png);
+        margin: .17rem .13rem 0 .24rem;
+      }
+      span{
+        float: left;
+        font-size: .14rem;
+        margin: .15rem .08rem 0 0;
+      }
+    }
+  }
+}
+.recipe-false{
+  margin-top: .44rem;
+  i{
+    margin:1rem 1.19rem 0 1.19rem;
+    display: block;
+    width: 82px;
+    height: 17px;
+    background-size: 82px 17px;
+    background-image: url(../images/no_content_icon.png);
+  }
+  span{
+    font-family: PingFang SC,Helvetica,黑体;
+    display: inline-block;
+    font-size: .14rem;
+    width: 3.2rem;
+    height:.16rem;
+    line-height: .16rem;
+    color: #C8C8C8;
+    text-align: center;
+    margin-top: .3rem;
+  }
+}

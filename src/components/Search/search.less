@@ -1,0 +1,227 @@
+.home-search {
+  position: relative;
+  z-index: 200;
+  background: white;
+  height: 5.68rem;
+  width: 3.2rem;
+  overflow-y: scroll;
+  cursor: pointer;
+  a {
+    text-decoration: none
+  }
+;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .search-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: .44rem;
+    background-color: #FEDA6A;
+    font-family: PingFang SC, Helvetica, 黑体;
+    .search-back {
+      position: absolute;
+      top: .12rem;
+      left: .165rem;
+      width: .12rem;
+      height: .21rem;
+      //margin: .11rem .165rem;
+      background-size: .12rem .21rem;
+      background-image: url(../Header/images/back_icon.png);
+    }
+    .search-content {
+      position: relative;
+      .search-input {
+        outline: none;
+        position: absolute;
+        left: .45rem;
+        top: .08rem;
+        width: 2.15rem;
+        height: .28rem;
+        border: none;
+        border-radius: 5px;
+        padding: 0 .3rem 0 .3rem;
+        &::placeholder {
+          color: #C8C8C8;
+        }
+      }
+      i {
+        position: absolute;
+        z-index: 20;
+        top: .15rem;
+        left: .53rem;
+        width: .13rem;
+        height: .13rem;
+        background-size: .13rem .13rem;
+        background-image: url(./images/search_icon2.png);
+      }
+      .search-clear {
+        width: .14rem;
+        height: .14rem;
+        background-size: .14rem .14rem;
+        background-image: url(./images/clear_icon.png);
+        position: absolute;
+        right: .68rem;
+        top: .15rem;
+      }
+    }
+    .search-submit {
+      position: absolute;
+      right: .16rem;
+      top: .11rem;
+      letter-spacing: -0.0039rem;
+      color: #987A57;
+      background: none;
+      border: none;
+      outline: none;
+    }
+  }
+  .search-catalog {
+    margin-top: .44rem;
+    font-family: PingFang SC, Helvetica, 黑体;
+    .search-record {
+      min-height: .45rem;
+      max-height: 2.56rem;
+      border-bottom: .01rem solid #E3E3E3;
+      padding: .2rem 0 .2rem .24rem;
+      .record-catalog {
+        width: 2.96rem;
+        height: .25rem;
+        line-height: .25rem;
+        text-decoration: none;
+        border-bottom: .01rem solid #E3E3E3;
+        span {
+          float: left;
+        }
+        a {
+          float: right;
+          width: .28rem;
+          margin-right: .2rem;
+          color: #323232;
+        }
+      }
+      .record-list {
+        clear: both;
+        max-height: 1.7rem;
+        overflow: hidden;
+        width: 100%;
+        margin: 0.1rem 0;
+        li {
+          float: left;
+          max-width: 2.72rem;
+          overflow-x: hidden;
+          text-overflow: ellipsis;
+          font-size: .14rem;
+          height: .26rem;
+          line-height: .16rem;
+          padding: .04rem .12rem;
+          display: inline-block;
+          border: .01rem solid #C8C8C8;
+          border-radius: .04rem;
+          margin: 0 .12rem .08rem 0;
+        }
+      }
+    }
+    .search-classify {
+      min-height: .46rem;
+      max-height: 2.56rem;
+      border-bottom: .01rem solid #E3E3E3;
+      padding: .2rem 0 .15rem .24rem;
+      .classify-catalog {
+        width: 2.96rem;
+        height: .25rem;
+        line-height: .25rem;
+        border-bottom: .01rem solid #E3E3E3;
+        span {
+          float: left;
+        }
+      }
+      .classify-list {
+        max-height: 1.4rem;
+        overflow: hidden;
+        width: 100%;
+        padding: 0.1rem 0;
+        margin-bottom: .01rem;
+        li {
+          font-size: .14rem;
+          height: .26rem;
+          line-height: .16rem;
+          padding: .04rem .12rem;
+          display: inline-block;
+          border: .01rem solid #C8C8C8;
+          border-radius: .04rem;
+          margin: 0 .12rem .08rem 0;
+          a {
+            color: #333;
+          }
+        }
+      }
+    }
+    .star-level {
+      min-height: .46rem;
+      max-height: 2.56rem;
+      border-bottom: .01rem solid #E3E3E3;
+      padding: .2rem 0 .15rem .24rem;
+      .star-diff {
+        width: 2.96rem;
+        height: .25rem;
+        line-height: .25rem;
+        border-bottom: .01rem solid #E3E3E3;
+        span {
+          float: left;
+        }
+      }
+      .star-list {
+        max-height: 1.4rem;
+        overflow: hidden;
+        width: 100%;
+        padding: 0.1rem 0;
+        margin-bottom: .01rem;
+        li {
+          font-size: .14rem;
+          height: .26rem;
+          line-height: .16rem;
+          padding: .04rem .12rem;
+          display: inline-block;
+          border: .01rem solid #C8C8C8;
+          border-radius: .04rem;
+          margin: 0 .12rem .08rem 0;
+        }
+      }
+    }
+  }
+  .search-dailog.fade-enter.fade-enter-active {
+    bottom: 1.12rem;
+    opacity: 1;
+    transition: all 140ms ease-out;
+  }
+  .search-dailog.fade-enter {
+    bottom: 0;
+    opacity: 0.01;
+  }
+
+  .search-dailog.fade-exit.fade-exit-active {
+    bottom: 1.12rem;
+    opacity: 1;
+    transition: all 140ms ease-out;
+  }
+  .search-dailog.fade-exit {
+    bottom: 0;
+    opacity: 0.01;
+  }
+  .search-dailog {
+    font-family: PingFang SC, Helvetica, 黑体;
+    text-align: center;
+    width: 1.24rem;
+    height: .42rem;
+    line-height: .42rem;
+    background: #525252;
+    color: white;
+    border-radius: .05rem;
+    position: absolute;
+    bottom: 1.12rem;
+    left: .98rem;
+    opacity: 0.01;
+  }
+}

@@ -1,0 +1,118 @@
+.other-content {
+  position: absolute;
+  top: .44rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  z-index: 11;
+  overflow: scroll;
+  .other-header {
+    overflow: hidden;
+    width: 100%;
+    height: 1.2rem;
+    background-color: #FDD96C;
+    .user-info {
+      position: relative;
+      width: 100%;
+      height: .7rem;
+      margin: 0 .14rem;
+      padding: 0 1rem 0 .8rem;
+      h5 {
+        padding-top: .15rem;
+        font-weight: bold;
+      }
+      span {
+        font-size: .1rem;
+      }
+      .pic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: .7rem;
+        height: .7rem;
+        line-height: .7rem;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+      .fork {
+        position: absolute;
+        top: 35%;
+        right: .3rem;
+        width: .73rem;
+        height: .3rem;
+        line-height: .3rem;
+        border: .01rem solid #977957;
+        border-radius: .02rem;
+        color: #977957;
+        font-size: .16rem;
+        text-align: center;
+      }
+
+    }
+  }
+  .other-select {
+    width: 100%;
+    .zp {
+      width: 100%;
+      text-align: center;
+      p {
+        display: block;
+        margin: .2rem .15rem;
+        height: .2rem;
+        line-height: .2rem;
+        text-align: center;
+      }
+    }
+  }
+  .other-tab {
+    width: 100%;
+    height: .44rem;
+    a {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      height: .44rem;
+      width: 50%;
+      line-height: .44rem;
+      color: #000;
+      background-color: #fff;
+      border-bottom: .01rem solid #E9E9E9;
+      &.active {
+        color: #977957;
+        border-bottom: solid .02rem #977957;
+      }
+    }
+  }
+  .footer-footer {
+    padding-top: 1.6rem;
+    display: block;
+    width: 100%;
+    height: 2rem;
+    color: #c0c0c0;
+    text-align: center;
+  }
+}
+
+.header {
+  display:flex;
+  justify-content: space-between;
+  .other-back {
+    margin: .12rem 0 0 .15rem;
+    width: .2rem;
+    height: .2rem;
+    background-size: .2rem .2rem;
+    background-image: url(./images/back_icon.png);
+  }
+  .other-right {
+    margin: .12rem .15rem 0 0;
+    width: .23rem;
+    height: .21rem;
+    background-size: .23rem .21rem;
+    background-image: url(./images/share_icon.png);
+  }
+}

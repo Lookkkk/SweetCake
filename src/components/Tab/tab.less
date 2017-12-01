@@ -1,0 +1,53 @@
+.tabs {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: .5rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #d5d5d5;
+  a {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #969696;
+    text-decoration: none;
+    i {
+      width: 25px;
+      height: 25px;
+      font-size: 22px;
+      font-style: normal;
+      background-size: 25px 25px;
+      background-repeat: no-repeat;
+      &.icon-index {
+        background-image: url(./images/icon-index.png);
+      }
+      &.icon-lesson {
+        background-image: url(./images/icon-lesson.png);
+      }
+      &.icon-profile {
+        background-image: url(./images/icon-profile.png);
+      }
+      &.icon-tools {
+        background-image: url(./images/icon-tools.png);
+      }
+    }
+    &.active {
+      color: #FEDA6A;
+      .icon-index {
+        background-image: url(./images/icon-index1.png);
+      }
+      .icon-lesson {
+        background-image: url(./images/icon-lesson1.png);
+      }
+      .icon-profile {
+        background-image: url(./images/icon-profile1.png);
+      }
+      .icon-tools {
+        background-image: url(./images/icon-tools1.png);
+      }
+    }
+  }
+}

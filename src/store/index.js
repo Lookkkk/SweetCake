@@ -1,0 +1,11 @@
+import {createStore,applyMiddleware} from 'redux';
+import logger from 'redux-logger';
+import thunk from 'redux-thunk';
+import promise from 'redux-promise';
+import reducer from './reducers';
+import {routerMiddleware} from 'react-router-redux';
+import createHistory from 'history/createHashHistory';
+const history = createHistory();
+let router = routerMiddleware(history);
+let store = createStore(reducer,applyMiddleware(thunk,promise,router,logger));
+export default store;

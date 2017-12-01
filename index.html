@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="http://img.hb.aicdn.com/650cab321a41732903cdc63820b2e3c73ec6ee95fa8-hMDrEZ_fw658"/>
+    <link rel="bookmark" href="http://img.hb.aicdn.com/650cab321a41732903cdc63820b2e3c73ec6ee95fa8-hMDrEZ_fw658"/>
+    <title>焙忘录</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        ~function () {
+            window.addEventListener('resize', computed, false);
+            computed();
+
+            function computed() {
+                var deviceW = document.documentElement.clientWidth;
+                console.log(deviceW);
+                if (deviceW > 320) {
+                    document.documentElement.style.fontSize = 100 + 'px';
+                    //console.log(document.documentElement.style.fontSize);
+                } else {
+                    document.documentElement.style.fontSize = deviceW / 320 * 100 + 'px';
+                }
+            }
+        }();
+    </script>
+</head>
+<body>
+<div id="root"></div>
+</body>
+</html>
