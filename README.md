@@ -1,7 +1,7 @@
 ﻿# SweetCake
 react-mobile
 
-![Sweet1](C:\Users\Administrator.PC-20170105HEXP\Desktop\Sweet1.gif)
+![Sweet1](C:\Users\Administrator.PC-20170105HEXP\Desktop\SweetCake\Screenshots\Sweet1.gif)
 
 ![Sweet2](C:\Users\Administrator.PC-20170105HEXP\Desktop\Sweet2.gif)
 
