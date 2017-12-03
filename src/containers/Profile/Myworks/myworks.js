@@ -28,8 +28,9 @@ class Myworks extends Component {
 
     handleClose = (e) => {
         e.preventDefault();
-        if (this.state.show) {
-            setTimeout(()=>this.$div.style.display = 'none',500);
+        if (this.state.show&&this.$div) {
+            console.log(this.$div);
+            setTimeout(() => this.$div.style.display = 'none', 500);
             this.setState({show: !this.state.show});
             this.$div.style.opacity = 0.01;
         }
@@ -59,13 +60,13 @@ class Myworks extends Component {
     render() {
         console.log(this.props);
         return (
-            <div className="works-top" onClick={this.handleClose}>
+            <div className="works-top">
                 <div className="left" onClick={() => this.props.history.goBack()}><a href="#"
                                                                                      className="back"><i>&lt;</i></a>
                 </div>
                 <div className="collect-middle">我的作品</div>
 
-                <div className="list-works">
+                <div className="list-works" onClick={this.handleClose}>
                     <ul>
                         {this.state.works.map((item, index) => (
                                 <li key={index} className="list">
@@ -73,7 +74,8 @@ class Myworks extends Component {
                                         <a href="">
                                             <div className="picture">
                                                 <div onClick={this.handleClick}
-                                                     style={{backgroundImage: item.url?`url(${item.url})`:'url("http://img.hb.aicdn.com/3eeedfcbcfaccc4368e54524b8a67368ccd2918a2572f-7XKYH4_fw658")'}} className="img"/>
+                                                     style={{backgroundImage: item.url ? `url(${item.url})` : 'url("http://img.hb.aicdn.com/3eeedfcbcfaccc4368e54524b8a67368ccd2918a2572f-7XKYH4_fw658")'}}
+                                                     className="img"/>
                                             </div>
                                         </a>
                                     </div>

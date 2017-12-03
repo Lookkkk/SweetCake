@@ -61,7 +61,7 @@ class Recipe extends Component {
 
     render() {
         return (
-            this.state.list.length || this.state.data ?
+            this.state.list|| this.state.data ?
                 <div className="recipe">
                     {this.state.headline &&this.state.flag? <div className="recipe-header">{this.state.headline}</div> : null}
                     <div className="recipe-body">

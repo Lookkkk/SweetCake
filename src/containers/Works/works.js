@@ -140,11 +140,12 @@ class Works extends Component {
     };
 //创建预览图,获取图片url,
     handleClick = () => {
+        console.log(this.$file.files[0]);
         let url = window.URL.createObjectURL(this.$file.files[0]);
         this.$img.src = url;
         this.$img.style.display = 'block';
         console.log('kkkkkkkkkkkkkkkkkkkkkkkkkk');
-        this.setState({url,change:true});
+        this.setState({url});
     };
 //改变星星,分类
     select = (index) => {
@@ -180,7 +181,7 @@ class Works extends Component {
                                  src="" alt=""
                                  id="works-img"/>
                             <i> </i>
-                            <input onClick={this.handleClick} type="file" ref={input => this.$file = input}/>
+                            <input onChange={this.handleClick} type="file" ref={input => this.$file = input}/>
                         </div>
                         <p></p>
                     </div>
