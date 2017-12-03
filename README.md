@@ -1,6 +1,6 @@
 ﻿# SweetCake
-react-mobile
-####运行项目：<br/>
+react-mobile<br/>
+运行项目：<br/>
 cd SweetCake<br/>
 npm i<br/>
 npm run dev<br/>
