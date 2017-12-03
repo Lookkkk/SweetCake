@@ -1,6 +1,11 @@
 ﻿# SweetCake
 react-mobile
-
+运行项目：
+cd SweetCake
+npm i
+npm run dev
+cd server
+node server.js
 
 ![Sweet1](https://github.com/Lookkkk/SweetCake/raw/master/Screenshots/Sweet1.gif)
 
